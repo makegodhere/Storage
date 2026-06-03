@@ -27,4 +27,4 @@ jobs:
         with:
           name: "[#${{github.run_number}}]-Storage"
           path: |
-            plugin/target/*.jar
+            target/*.jar
