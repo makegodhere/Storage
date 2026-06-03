@@ -24,8 +24,8 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
       - name: Upload artifacts
-        uses: actions/upload-artifact@v4
+        uses: "actions/upload-artifact@v4.6.2"
         with:
-          name: storage-Artifacts-${{ github.run_number }}
+          name: "[#${{github.run_number}}]-Storage"
           path: |
-            plugin/target/storage.jar
+            ./target/Storage.jar
