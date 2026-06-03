@@ -1,5 +1,6 @@
 name: DevBuild
 on:
+  workflow_dispatch:
   push:
     branches: [ master ]
 jobs:
